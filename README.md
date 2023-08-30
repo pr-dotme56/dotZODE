@@ -6,11 +6,11 @@ This is a simple svelte app that allows users to generate and decode code messag
 
 Clone this repository to your local machine:
 ```
-git clone https://github.com/iamAbhinavPR/Test-engine-2.git
+git clone https://github.com/iamAbhinavPR/Code-Generator.git
 ```
 Navigate to the project directory:
 ```
-cd Test-engine-2
+cd Code-Generator
 ```
 Install dependencies using npm:
 ```
