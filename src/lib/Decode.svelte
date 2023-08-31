@@ -18,10 +18,7 @@
         <Button on:click={() => {value = toString(ASCII)}} color="blue" id="ConvertBtn">
             Convert
         </Button>
-        <Tooltip triggeredBy="#ConvertBtn">
-            Convert code
-        </Tooltip>
-        <Tooltip trigger="click" triggeredBy="#ConvertBtn">
+        <Tooltip arrow={false} trigger="click" triggeredBy="#ConvertBtn">
             Converted!
         </Tooltip>
     </div>
