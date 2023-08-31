@@ -26,10 +26,7 @@
         <Button on:click={() => {code = toASCII(str)}} color="blue" id="ConvertBtn">
             Convert
         </Button>
-        <Tooltip triggeredBy="#ConvertBtn">
-            Convert text
-        </Tooltip>
-        <Tooltip trigger="click" triggeredBy="#ConvertBtn">
+        <Tooltip arrow={false} trigger="click" triggeredBy="#ConvertBtn">
             Converted!
         </Tooltip>
     </div>
