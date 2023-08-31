@@ -39,10 +39,7 @@
         <Button on:click={copyValue} color="red" id="CopyBtn">
             Copy
         </Button>
-        <Tooltip triggeredBy="#CopyBtn">
-            Copy code
-        </Tooltip>
-        <Tooltip trigger="click" triggeredBy="#CopyBtn">
+        <Tooltip arrow={false} trigger="click" triggeredBy="#CopyBtn">
             Copied!
         </Tooltip>
     </div>      
