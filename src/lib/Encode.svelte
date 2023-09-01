@@ -63,7 +63,7 @@
         padding: 20px;
         bottom: 14%;
         cursor: pointer;
-        margin-left: 10px;
+        margin-left: 20px;
     }
     .inputField{
         position: relative;
@@ -81,7 +81,7 @@
         font-size: 1em;
         font-weight: 500;
         font-size: 10;
-        padding-right: 70px;
+        padding-right: 50px;
         background-color: rgba(199, 199, 199, 0.281);
         padding: 0.6em 1.2em;
         border: 1px rgba(199, 199, 199, 0.281);
