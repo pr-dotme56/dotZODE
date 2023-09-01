@@ -63,6 +63,7 @@
         padding: 20px;
         bottom: 14%;
         cursor: pointer;
+        margin-left: 10px;
     }
     .inputField{
         position: relative;
