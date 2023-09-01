@@ -24,12 +24,15 @@
     </div>
 
     <p class="value  text-black dark:text-white">
-        <Textarea placeholder="Decoded message" rows="5" disabled readonly value= {value}/>
+        <textarea id="textar" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Decoded message" rows="5" disabled readonly value= {value}/>
     </p>
 </div>
 
 
 <style>
+    #textar{
+        resize: none;
+    }
     .inputField{
         display: flex;
         justify-content: center;

@@ -1,5 +1,5 @@
 <script>
-	import github from '$lib/images/github.svg';
+	import github from '$lib/images/github.svg'
     import { DarkMode } from 'flowbite-svelte';
 </script>
 
@@ -12,15 +12,15 @@
 	</h1>
 	<div class="corner">
 		<a href="https://github.com/iamAbhinavPR/Code-Generator.git">
-			<img src={github} alt="GitHub" />
+			<img src={github} alt="GitHub"/>
 		</a>
 	</div>
 </header>
 
-<style>
+<style lang="postcss">
 	.title{
-		font-size: 35px;
-        font-weight: bold;
+		font-size: 32px;
+        font-weight: 600;
         position: relative;
         display: flex;
         justify-content: center;
@@ -30,7 +30,6 @@
 		display: flex;
 		justify-content: space-between;
 	}
-
 	.corner {
 		width: 3em;
 		height: 3em;
@@ -48,6 +47,7 @@
 	.corner img {
 		width: 2em;
 		height: 2em;
+		padding: 1px;
 		object-fit: contain;
 	}
 
