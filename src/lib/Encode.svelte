@@ -73,6 +73,7 @@
     }
     .inputText{
         display: flex;
+        margin-right: 10px;
         align-items: center;
         font-family: "Fira Code";
         justify-content: center;
