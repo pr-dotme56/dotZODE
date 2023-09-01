@@ -81,7 +81,7 @@
         font-size: 1em;
         font-weight: 500;
         font-size: 10;
-        padding-right: 50px;
+        padding-right: 70px;
         background-color: rgba(199, 199, 199, 0.281);
         padding: 0.6em 1.2em;
         border: 1px rgba(199, 199, 199, 0.281);
