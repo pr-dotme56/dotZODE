@@ -2,7 +2,7 @@
     let str = "";
   	let code = "";
   	function toASCII (str: string) {
-		return [...str].map(result => result.charCodeAt(0)).join(" ");
+		return [...str].map(result => result.charPointAt(0)).join(" ");
   	}
     import { Button, Tooltip, Input} from 'flowbite-svelte';
     async function copyValue() {
