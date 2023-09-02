@@ -45,7 +45,7 @@
     </div>
 
     <p class="code text-black dark:text-white">
-        <Input class="md-6" disabled readonly value= {code} placeholder="Generated code" size="lg"/>
+        <Input class="md-6" readonly value= {code} placeholder="Generated code" size="lg"/>
     </p>
 
     <div class="Btn">
