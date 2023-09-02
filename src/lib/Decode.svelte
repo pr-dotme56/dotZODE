@@ -14,7 +14,7 @@
 
 <div class="window">
     <div class="inputField">
-        <input bind:value={ASCII} placeholder="Enter the code" class="inputText text-black dark:text-white"/>
+        <input bind:value={ASCII} placeholder="Enter the code" type="text" class="inputText bg-gray-200 border border-gray-300 text-gray-900 text-sm w-full rounded-md focus:ring-blue-500 focus:border-blue-500 block  p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
         {#if ASCII}
             <button class="clearBtn" on:click={ClearIn} >
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -57,18 +57,8 @@
         justify-content: center;
     }
     .inputText{
-        display: flex;
-        align-items: center;
-        font-family: "Fira Code";
-        justify-content: center;
         margin-bottom: 20px;
-        font-size: 1em;
-        font-weight: 500;
-        font-size: 10;
-        background-color: rgba(199, 199, 199, 0.281);
-        padding: 0.6em 1.2em;
-        border: 1px rgba(199, 199, 199, 0.281);
-        border-radius: 3px;
+        height: 48;
     }
     .value{
         padding: 25px;

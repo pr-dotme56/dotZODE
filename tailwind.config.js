@@ -3,9 +3,32 @@
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
   
-	plugins: [require('flowbite/plugin')],
+	plugins: [require('flowbite/plugin'), require("daisyui")],
+	
   
 	darkMode: 'class',
+	daisyui: {
+		themes: [
+		  {
+			mytheme: {
+				"primary": "#F27405",
+			
+   				"secondary": "#41B3FF",
+			
+   				"neutral": "#2a323c",
+			
+   				"base-100": "#1d232a",
+			
+   				"success": "#36d399",
+			
+   				"warning": "#fbbd23",
+			
+   				"error": "#f87272",
+			},
+		  },
+		],
+	  },
+  
   
 	theme: {
 	  extend: {
