@@ -61,7 +61,7 @@
 
 <style>
     .clearBtnBackground {
-        background-color: #E0E0E0;
+        background-color: #334155;
         padding: 5px; 
     }
     .clearBtn {
