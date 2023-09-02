@@ -80,6 +80,7 @@
     }
     .inputText{
         margin-bottom: 10px;
+        position: relative;
         height: 48;
     }
     .code{
