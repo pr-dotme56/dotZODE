@@ -62,7 +62,7 @@
         position: absolute;
         padding: 10px;
         top: 0%;
-        right: 0.25rem;
+        right: 2px;
         cursor: pointer; 
     }
     .inputField{
