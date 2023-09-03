@@ -60,7 +60,6 @@
 <style>
     .clearBtn {
         position: absolute;
-        float: right;
         padding: 10px;
         top: 0%;
         cursor: pointer; 
