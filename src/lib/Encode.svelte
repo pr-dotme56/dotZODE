@@ -83,6 +83,7 @@
         margin-bottom: 10px;
         position: relative;
         height: 48;
+        padding-right: 40px;
     }
     .code{
         padding: 25px;
