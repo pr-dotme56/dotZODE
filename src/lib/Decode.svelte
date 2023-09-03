@@ -44,7 +44,7 @@
         position: absolute;
         right: 2px;
         padding: 10px;
-        bottom: 38%;
+        bottom: 20%;
         cursor: pointer;
     }
     #textar{
