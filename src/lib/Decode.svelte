@@ -14,7 +14,7 @@
 
 <div class="window">
     <div class="inputField">
-        <input bind:value={ASCII} placeholder="Enter the code" type="text" class="inputText bg-gray-200 border border-gray-300 text-gray-900 text-sm w-full rounded-md focus:ring-blue-500 focus:border-blue-500 block  p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
+        <input bind:value={ASCII} placeholder="Enter the code" type="text" class="inputText pr-10 mb-2.5 h-12 relative bg-gray-200 border border-gray-300 text-gray-900 text-sm w-full rounded-md focus:ring-blue-500 focus:border-blue-500 block p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
         {#if ASCII}
             <button class="clearBtn" on:click={ClearIn} >
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -34,7 +34,7 @@
     </div>
 
     <p class="value  text-black dark:text-white">
-        <textarea id="textar" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Decoded message" rows="5" disabled readonly value= {value}/>
+        <textarea id="textar" class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" placeholder="Decoded message" rows="5" readonly value= {value}/>
     </p>
 </div>
 
@@ -42,8 +42,8 @@
 <style>
     .clearBtn {
         position: absolute;
-        right: 10px;
-        padding: 5px;
+        right: 2px;
+        padding: 10px;
         bottom: 38%;
         cursor: pointer;
     }
@@ -55,10 +55,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .inputText{
-        margin-bottom: 20px;
-        height: 48;
     }
     .value{
         padding: 25px;
