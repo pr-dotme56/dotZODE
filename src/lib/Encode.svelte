@@ -61,9 +61,8 @@
     .clearBtn {
         position: absolute;
         float: right;
-        right: 5px;
         padding: 10px;
-        top: 0%;
+        top: 2%;
         cursor: pointer; 
     }
     .inputField{
