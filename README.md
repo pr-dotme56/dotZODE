@@ -1,6 +1,6 @@
-# .DOT
+# .CODE
 
-This is an app that allows users to generate and decode code messages. With this app, you can encode text messages into a code format (ie. **ASCII format** ) and also decode previously encoded messages back to their original text form.
+An app that allows users to generate and decode code messages. With this app, you can encode text messages into a code format (ie. **ASCII format** ) and also decode previously encoded messages back to their original text form.
 
 ## Installation and Usage
 
