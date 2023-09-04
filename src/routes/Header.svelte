@@ -7,7 +7,7 @@
         <DarkMode/>
     </div>
 	<h1 class="title text-black dark:text-white">
-		Code Generator
+    .CODE
 	</h1>
 	<div class="corner">
 		<a href="https://github.com/iamAbhinavPR/Code-Generator.git">
