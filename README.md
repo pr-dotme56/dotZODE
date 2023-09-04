@@ -6,11 +6,11 @@ An app that allows users to generate and decode code messages. With this app, yo
 
 Clone this repository to your local machine:
 ```
-git clone https://github.com/iamAbhinavPR/Code-Generator.git
+git clone https://github.com/iamAbhinavPR/.CODE.git
 ```
 Navigate to the project directory:
 ```
-cd Code-Generator
+cd .CODE
 ```
 Install dependencies using npm:
 ```
