@@ -6,11 +6,11 @@ An app that allows users to generate and decode code messages. With this app, yo
 
 Clone this repository to your local machine:
 ```
-git clone https://github.com/iamAbhinavPR/.CODE.git
+git clone https://github.com/iamAbhinavPR/dotCODE.git
 ```
 Navigate to the project directory:
 ```
-cd .CODE
+cd dotCODE
 ```
 Install dependencies using npm:
 ```
