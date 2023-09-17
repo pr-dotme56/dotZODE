@@ -3,29 +3,25 @@
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
 	import Header from './Header.svelte';
+	import { storePopup } from '@skeletonlabs/skeleton';
+	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
+	import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
+	import { AppShell } from '@skeletonlabs/skeleton';
 	inject({ mode: dev ? 'development' : 'production' });
 	
 </script>
 
-<div class="app  bg-white dark:bg-slate-800">
-	<Header/>
-	<main>
-		<slot />
-	</main>
-	<footer>
-		<p class="footer text-black dark:text-white">
-			Made by Abhinav PR
-		</p>
-	</footer>
-</div>
+<AppShell>
+	<svelte:fragment slot="header">
+		<Header/>
+	</svelte:fragment>
+
+	<slot />
+	
+</AppShell>
+
+
 
 <style lang="postcss">
-	.footer {
-		font-family: "Fira Code";
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
+
 </style>

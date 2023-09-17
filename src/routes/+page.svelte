@@ -1,30 +1,9 @@
 <script lang="ts">
-    import Encode from '$lib/Encode.svelte';
-    import Decode from '$lib/Decode.svelte';
-    import { Tabs, TabItem } from 'flowbite-svelte';
+    import Encode from '$lib/Conversion.svelte';
 </script>
 
-<div class="window  bg-white dark:bg-slate-800">
-  <Tabs style="pill">
-    <TabItem open>
-      <span slot="title">Encoder</span>
-        <Encode/>
-    </TabItem>
-    <TabItem open>
-      <span slot="title">Decoder</span>
-        <Decode/>
-    </TabItem>
-  </Tabs>
-</div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-<style lang="postcss">
-  .window{
-    font-family: "Fira Code";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-  }
-</style>
-  
+<div class="flex justify-center">
+  <Encode/>
+</div>
