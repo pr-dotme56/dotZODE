@@ -1,4 +1,4 @@
-# dotCODE
+# dotZODE
 
 [![License](https://img.shields.io/github/license/iamAbhinavPR/dotCODE)](LICENSE)
 [![GitHub deployments](https://img.shields.io/github/deployments/iamAbhinavPR/dotCODE/Production)](Deployment)
