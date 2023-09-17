@@ -17,12 +17,12 @@ An conversion web app built using Svelte Kit. The app allows users to convert te
 
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/iamAbhinavPR/dotCODE.git
+git clone https://github.com/iamAbhinavPR/dotZODE.git
 ```
 
 Navigate to project directory:
 ```bash
-cd dotCODE
+cd dotZODE
 ```
 
 Install dependencies:
