@@ -10,7 +10,7 @@
 		</svg>			
 	</svelte:fragment>
 	<h3 class="title h3 invisible sm:visible">
-		dotCODE
+		dotZODE
 	</h3>
 
 	<svelte:fragment slot="trail">
