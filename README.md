@@ -28,11 +28,7 @@ cd dotCODE
 Install dependencies:
 ```bash
 npm install
-npm install
-npx svelte-add@latest tailwindcss
-npm i
 ```
-
 
 ## Usage
 
