@@ -81,11 +81,11 @@
     function binToASC(str: string) {
       return (str.match(/.{8}/g) || []).map(result => String.fromCharCode(parseInt(result, 2))).join("")
     }
-    function octToASC(str: string) {
-      return str.map(result => String.fromCharCode(parseInt(result, 8))).join("");
+    function octToASC(strings: string[]) {
+      return strings.map(result => String.fromCharCode(parseInt(result, 8))).join("");
     }
-    function hexToASC(str: string) {
-      return str.map(result => String.fromCharCode(parseInt(result, 16))).join("");
+    function hexToASC(strings: string[]) {
+      return strings.map(result => String.fromCharCode(parseInt(result, 16))).join("");
     }
     // ------------------------------------
 
