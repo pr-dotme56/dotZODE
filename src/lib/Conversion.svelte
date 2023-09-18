@@ -3,8 +3,8 @@
     import { ListBox, ListBoxItem, popup } from '@skeletonlabs/skeleton';
     import type {PopupSettings} from '@skeletonlabs/skeleton';
 
-    let listValue: string = "";
-    let listValue2: string = "";
+    let listValue: string;
+    let listValue2: string;
     
     const popupCombobox: PopupSettings = {
 	    event: 'focus-click',
