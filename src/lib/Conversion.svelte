@@ -137,7 +137,7 @@
         </button>
     
         <!-- Second Button -->
-        <button class="btn variant-filled-secondary w-48 justify-between mt-4" use:popup={popupCombobox2}>
+        <button class="btn variant-filled-secondary w-48 justify-between" use:popup={popupCombobox2}>
           <span class="capitalize">{listValue2 ?? "Select"}</span>
           <span class="material-symbols-rounded">expand_more</span>
         </button>
