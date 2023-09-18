@@ -79,7 +79,7 @@
       return [...str].map(result => result.codePointAt(0)).join(" ");
   	}
     function binToASC(str: string) {
-      return (str.match(/.{1,8}/g) || []).map(result => String.fromCharCode(parseInt(str, 2))).join("")
+      return (str.match(/.{8}/g) || []).map(result => String.fromCharCode(parseInt(str, 2))).join("")
     }
     function octToASC(str: string) {
       return String.fromCharCode(parseInt(str, 8))
