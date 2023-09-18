@@ -129,7 +129,7 @@
 
 
 <div class="window ">
-    <div class="mb-16">
+    <div class="mb-10 mt-5">
         <!-- First Button -->
         <button class="btn variant-filled-secondary w-48 justify-between" use:popup={popupCombobox}>
           <span class="capitalize">{listValue ?? "Select"}</span>
