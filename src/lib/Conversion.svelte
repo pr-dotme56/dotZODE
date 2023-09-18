@@ -94,10 +94,10 @@
         return  str.split("").map(result => result.charCodeAt(0).toString(2).padStart(8, "0")).join("");
     }
     function octToBin(str: string) {
-        return parseInt(str, 8).toString(2).padStart(4, "0")
+        return parseInt(str, 8).toString(2);
     }
     function hexToBin(str: string) {
-        return parseInt(str, 16).toString(2).padStart(4, "0")
+        return parseInt(str, 16).toString(2);
     }
     // ------------------------------------
 
