@@ -82,10 +82,10 @@
       return (str.match(/.{8}/g) || []).map(result => String.fromCharCode(parseInt(result, 2))).join("")
     }
     function octToASC(str: string) {
-      return String.fromCharCode(parseInt(str, 8))
+      return str.map(result => String.fromCharCode(parseInt(result, 8)));
     }
     function hexToASC(str: string) {
-      return String.fromCharCode(parseInt(str, 16))
+      return str.map(result => String.fromCharCode(parseInt(result, 16)));
     }
     // ------------------------------------
 
