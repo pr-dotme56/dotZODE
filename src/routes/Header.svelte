@@ -9,7 +9,7 @@
 			<circle cx="256" cy="256" r="256" fill="#F2AC57"/>
 		</svg>			
 	</svelte:fragment>
-	<h3 class="title h3 invisible sm:visible">
+	<h3 class="title h3">
 		dotZODE
 	</h3>
 
