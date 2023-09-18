@@ -1,7 +1,7 @@
 # dotZODE
 
-[![License](https://img.shields.io/github/license/iamAbhinavPR/dotCODE)](LICENSE)
-[![GitHub deployments](https://img.shields.io/github/deployments/iamAbhinavPR/dotCODE/Production)](Deployment)
+[![License](https://img.shields.io/github/license/iamAbhinavPR/dotZODE)](LICENSE)
+[![GitHub deployments](https://img.shields.io/github/deployments/iamAbhinavPR/dotZODE/Production)](Deployment)
 ## Description
 
 An conversion web app built using Svelte Kit. The app allows users to convert text between ASCII, binary, octal, and hexadecimal representations. It also provides the functionality to convert between these formats and back to text.
@@ -47,5 +47,5 @@ If you'd like to contribute to this project,:
 
 ## Licence
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/iamAbhinavPR/dotCODE/blob/main/LICENSE)
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/iamAbhinavPR/dotZODE/blob/main/LICENSE)
 file for details.
