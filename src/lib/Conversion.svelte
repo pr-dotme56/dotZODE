@@ -14,7 +14,7 @@
     };
 
     const popupCombobox2: PopupSettings = {
-    event: 'focus-click',
+    event: 'click',
     target: 'popupCombobox2',
     placement: 'bottom',
     closeQuery: '.listbox-item',
