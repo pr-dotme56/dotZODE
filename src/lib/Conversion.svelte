@@ -4,18 +4,18 @@
     import type {PopupSettings} from '@skeletonlabs/skeleton';
     import { CodeBlock } from '@skeletonlabs/skeleton';
 
-    let listValue: string = "";
-    let listValue2: string = "";
+    let listValue: string;
+    let listValue2: string;
     
     const popupCombobox: PopupSettings = {
-	    event: 'focus-click',
+	    event: 'click',
 	    target: 'popupCombobox',
 	    placement: 'bottom',
 	    closeQuery: '.listbox-item'
     };
 
     const popupCombobox2: PopupSettings = {
-    event: 'focus-click',
+    event: 'click',
     target: 'popupCombobox2',
     placement: 'bottom',
     closeQuery: '.listbox-item',
@@ -94,13 +94,13 @@
       return [...str].map(result => result.codePointAt(0)).join(" ");
   	}
     function binToASC(str: string) {
-      return (str.match(/.{1,8}/g) || []).map(result => String.fromCharCode(parseInt(str, 2))).join("")
+      return (str.match(/.{8}/g) || []).map(result => String.fromCharCode(parseInt(result, 2))).join("")
     }
     function octToASC(str: string) {
-      return String.fromCharCode(parseInt(str, 8))
+      return str.split(' ').map(result => String.fromCharCode(parseInt(result, 8))).join('');
     }
     function hexToASC(str: string) {
-      return String.fromCharCode(parseInt(str, 16))
+      return str.split(' ').map(result => String.fromCharCode(parseInt(result, 16))).join("");
     }
     // ------------------------------------
 
@@ -109,10 +109,10 @@
         return  str.split("").map(result => result.charCodeAt(0).toString(2).padStart(8, "0")).join("");
     }
     function octToBin(str: string) {
-        return parseInt(str, 8).toString(2).padStart(4, "0")
+        return parseInt(str, 8).toString(2);
     }
     function hexToBin(str: string) {
-        return parseInt(str, 16).toString(2).padStart(4, "0")
+        return parseInt(str, 16).toString(2);
     }
     // ------------------------------------
 
@@ -144,7 +144,7 @@
 
 
 <div class="window ">
-    <div class="mb-16">
+    <div class="mb-10 mt-5">
         <!-- First Button -->
         <button class="btn variant-filled-secondary w-48 justify-between" use:popup={popupCombobox}>
           <span class="capitalize">{listValue ?? "Select"}</span>
@@ -152,7 +152,7 @@
         </button>
     
         <!-- Second Button -->
-        <button class="btn variant-filled-secondary w-48 justify-between mt-4" use:popup={popupCombobox2}>
+        <button class="btn variant-filled-secondary w-48 justify-between" use:popup={popupCombobox2}>
           <span class="capitalize">{listValue2 ?? "Select"}</span>
           <span class="material-symbols-rounded">expand_more</span>
         </button>
@@ -206,4 +206,7 @@
 </div>
 
 <style>
+    .card[data-popup="popupCombobox"], .card[data-popup="popupCombobox2"] {
+        z-index: 9999;
+    }
 </style>
