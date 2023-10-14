@@ -2,7 +2,11 @@
     import { clipboard } from "@skeletonlabs/skeleton";
     import { ListBox, ListBoxItem, popup } from '@skeletonlabs/skeleton';
     import type {PopupSettings} from '@skeletonlabs/skeleton';
-    import { CodeBlock } from '@skeletonlabs/skeleton';
+	import { createEventDispatcher } from "svelte";
+
+    let copyState = false;
+    let btnLabel = "Copy";
+    let btnCopied = "👍";
 
     let listValue: string;
     let listValue2: string;
@@ -75,6 +79,11 @@
         str="";
     }
 
+    function copyClick() {
+        copyState = true;
+        setTimeout(() => {copyState = false;}, 3000);
+    }
+    
     // Decimal -----------------------------
     function binToDec(str: string) {
         return str.split("").map(result => parseInt(result, 2));
@@ -145,17 +154,20 @@
 
 <div class="window ">
     <div class="mb-10 mt-10">
-        <!-- First Button -->
-        <button class="btn variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox}>
-          <span class="capitalize">{listValue ?? "Select"}</span>
-          <span class="material-symbols-rounded">expand_more</span>
-        </button>
+        <div class="flex justify-center">
+            <!-- First Button -->
+            <button class="btn mr-1 variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox}>
+                <span class="capitalize">{listValue ?? "Select"}</span>
+                <span class="material-symbols-rounded">expand_more</span>
+            </button>
     
         <!-- Second Button -->
-        <button class="btn variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox2}>
-          <span class="capitalize">{listValue2 ?? "Select"}</span>
-          <span class="material-symbols-rounded">expand_more</span>
-        </button>
+            <button class="btn ml-1 variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox2}>
+                <span class="capitalize">{listValue2 ?? "Select"}</span>
+                <span class="material-symbols-rounded">expand_more</span>
+            </button>
+        </div>
+        
     
         <!-- First Dropdown List -->
         <div class="card w-36 sm:w-48 shadow-xl py-2" data-popup="popupCombobox">
@@ -196,11 +208,21 @@
         </button>
     </div>
     
-    <div class="mt-3 justify-center ">
-        
-        <CodeBlock  code={code} class="code w-26"></CodeBlock>
-        
-    </div>      
+    <div class="mt-4 bg-neutral-900/90 text-md text-white rounded-md">
+        <header class="flex justify-end p-2 pl-4">
+            <button class="btn btn-sm variant-soft !text-white" on:click={copyClick} use:clipboard={code}>
+                {!copyState ? btnLabel : btnCopied}
+            </button>
+        </header>
+        <div class="h-30 overflow-x-auto">
+            <pre>
+                <code class="whitespace-normal max-w-screen-md">
+                    {code}
+                </code>
+            </pre>
+        </div>
+    </div>
+         
 </div>
 
 <style>
