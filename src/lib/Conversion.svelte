@@ -141,24 +141,24 @@
     //
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <div class="window ">
-    <div class="mb-10 mt-5">
+    <div class="mb-10 mt-10">
         <!-- First Button -->
-        <button class="btn variant-filled-secondary w-48 justify-between" use:popup={popupCombobox}>
+        <button class="btn variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox}>
           <span class="capitalize">{listValue ?? "Select"}</span>
           <span class="material-symbols-rounded">expand_more</span>
         </button>
     
         <!-- Second Button -->
-        <button class="btn variant-filled-secondary w-48 justify-between" use:popup={popupCombobox2}>
+        <button class="btn variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox2}>
           <span class="capitalize">{listValue2 ?? "Select"}</span>
           <span class="material-symbols-rounded">expand_more</span>
         </button>
     
         <!-- First Dropdown List -->
-        <div class="card w-48 shadow-xl py-2" data-popup="popupCombobox">
+        <div class="card w-36 sm:w-48 shadow-xl py-2" data-popup="popupCombobox">
           <ListBox rounded="rounded-none">
             <ListBoxItem bind:group={listValue} name="medium" value="ASCII">ASCII</ListBoxItem>
             <ListBoxItem bind:group={listValue} name="medium" value="Binary">Binary</ListBoxItem>
@@ -168,7 +168,7 @@
         </div>
     
         <!-- Second Dropdown List -->
-        <div class="card w-48 shadow-xl py-2" data-popup="popupCombobox2">
+        <div class="card w-36 sm:w-48 shadow-xl py-2" data-popup="popupCombobox2">
           <ListBox rounded="rounded-none">
             <ListBoxItem bind:group={listValue2} name="medium" value="Octal">Octal</ListBoxItem>
             <ListBoxItem bind:group={listValue2} name="medium" value="Hex">Hexadecimal</ListBoxItem>
@@ -180,9 +180,9 @@
     </div>
 
     <div class="inputField relative flex items-center justify-center">
-        <input bind:value={str} placeholder="Enter the text" type="text" class="input rounded-md py-3 relative mb-3 pr-10"/>
+        <input bind:value={str} placeholder="Enter the text" type="text" class="input rounded-md py-2 sm:py-3 relative mb-3 pr-10"/>
         {#if str}
-            <button class="clearBtn absolute p-3 bottom-3 right-0" on:click={textClearIn}>
+            <button class="clearBtn absolute p-3 bottom-2 sm:bottom-3 right-0" on:click={textClearIn}>
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
                 </svg>
@@ -196,11 +196,10 @@
         </button>
     </div>
     
-    <textarea placeholder="Generated code" class="textarea rounded-md mt-4 mb-4 resize-none" value={code} rows="2" readonly></textarea>
-    <div class="flex justify-center ">
-        <button use:clipboard={code} type="button" class="btn variant-filled-error">
-            Copy
-        </button>
+    <div class="mt-3 justify-center ">
+        
+        <CodeBlock  code={code} class="code w-26"></CodeBlock>
+        
     </div>      
 </div>
 
