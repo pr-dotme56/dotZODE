@@ -196,8 +196,7 @@
         </button>
     </div>
     
-    <input placeholder="Generated code" type="text" class="input rounded-md mt-4 mb-4" value={code} readonly>
-    
+    <textarea placeholder="Generated code" class="textarea rounded-md mt-4 mb-4 resize-none" value={code} rows="2" readonly></textarea>
     <div class="flex justify-center ">
         <button use:clipboard={code} type="button" class="btn variant-filled-error">
             Copy
