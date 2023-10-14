@@ -2,6 +2,7 @@
     import { clipboard } from "@skeletonlabs/skeleton";
     import { ListBox, ListBoxItem, popup } from '@skeletonlabs/skeleton';
     import type {PopupSettings} from '@skeletonlabs/skeleton';
+    import { CodeBlock } from '@skeletonlabs/skeleton';
 
     let listValue: string = "";
     let listValue2: string = "";
@@ -72,6 +73,20 @@
 
     function textClearIn() {
         str="";
+    }
+
+    // Decimal -----------------------------
+    function binToDec(str: string) {
+        return str.split("").map(result => parseInt(result, 2));
+    }
+    function octToDec(str: string) {
+        return parseInt(str, 8);
+    }
+    function hexToDec(str: string) {
+        return parseInt(str, 16);
+    }
+    function ascToDec(str: string) {
+        return [...str].map(result => result.codePointAt(0)).join(" ");
     }
 
     // ASCII ------------------------------
