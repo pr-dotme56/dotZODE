@@ -215,10 +215,8 @@
             </button>
         </header>
         <div class="h-30 overflow-x-auto">
-            <pre>
-                <code class="whitespace-normal max-w-screen-md">
-                    {code}
-                </code>
+            <pre class="rounded-md p-4 bg-gray-100">
+                <code class="text-gray-900 text-sm">{code}</code>
             </pre>
         </div>
     </div>
