@@ -5,7 +5,7 @@
 	import { createEventDispatcher } from "svelte";
 
     let copyState = false;
-    let btnLabel = "content_copy";
+    let btnLabel = "Copy";
     let btnCopied = "👍";
 
     let listValue: string;
@@ -212,7 +212,7 @@
     <div class="mt-4 rounded-md relative">
         <div class="relative">
             <button class="absolute top-2 right-2 btn btn-sm variant-soft-surface" on:click={copyClick} use:clipboard={code}>
-                {!copyState ? <span class="material-symbols-rounded">{btnLabel}</span> : btnCopied }
+                {!copyState ? btnLabel : btnCopied }
             </button>
             <textarea class="rounded-md p-4 pr-16 text-sm resize-none textarea" readonly>{code}</textarea>
         </div>
