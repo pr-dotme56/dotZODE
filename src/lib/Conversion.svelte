@@ -212,7 +212,7 @@
     
     <div class="relative w-96 rounded-lg mt-4">
         <pre class="textarea overflow-x-auto whitespace-pre">
-            <code>{code}</code>
+<code>{code}</code>
         </pre>
         <button on:click={copyClick} use:clipboard={code} class="absolute top-2 right-2 p-2 btn-sm btn variant-soft-surface">
             {!copyState ? btnLabel : btnCopied }
