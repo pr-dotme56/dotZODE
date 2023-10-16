@@ -213,7 +213,7 @@
             <button class="absolute top-2 right-2 btn btn-sm variant-soft-surface" on:click={copyClick} use:clipboard={code}>
                 {!copyState ? btnLabel : btnCopied }
             </button>
-            <textarea class="rounded-md p-4 text-sm resize-none textarea" readonly>{code}</textarea>
+            <textarea class="rounded-md p-4 pr-10 text-sm resize-none textarea" readonly>{code}</textarea>
         </div>
     </div>
          
