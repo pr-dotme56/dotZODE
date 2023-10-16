@@ -210,11 +210,11 @@
         </button>
     </div>
     
-    <div class="relative w-96 rounded-lg">
+    <div class="relative w-96 rounded-lg mt-4">
         <pre class="whitespace-pre code overflow-x-auto"> 
-            <code>{code}</code>
+            {code}
         </pre>
-        <button on:click={copyClick} use:clipboard={code} class="absolute top-2 right-2 p-2 btn-sm btn varient-soft-surface">
+        <button on:click={copyClick} use:clipboard={code} class="absolute top-2 right-2 p-2 btn-sm btn variant-soft-surface">
             {!copyState ? btnLabel : btnCopied }
         </button>
     </div>
