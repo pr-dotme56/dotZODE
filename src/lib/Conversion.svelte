@@ -149,9 +149,6 @@
     }
     //
 </script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
 <div class="window ">
     <div class="mb-10 mt-10">
@@ -159,13 +156,17 @@
             <!-- First Button -->
             <button class="btn mr-1 variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox}>
                 <span class="capitalize">{listValue ?? "Select"}</span>
-                <span class="material-symbols-rounded">expand_more</span>
+                <span>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                </span>
             </button>
     
         <!-- Second Button -->
             <button class="btn ml-1 variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox2}>
                 <span class="capitalize">{listValue2 ?? "Select"}</span>
-                <span class="material-symbols-rounded">expand_more</span>
+                <span>
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
+                </span>
             </button>
         </div>
         
@@ -211,10 +212,10 @@
     
     <div class="mt-4 rounded-md relative">
         <div class="relative">
-            <button class="absolute top-2 right-2 btn btn-sm variant-soft-surface" on:click={copyClick} use:clipboard={code}>
+            <button class="absolute top-2 right-2 btn btn-sm variant-soft-surface p-1" on:click={copyClick} use:clipboard={code}>
                 {!copyState ? btnLabel : btnCopied }
             </button>
-            <textarea class="rounded-md p-4 pr-16 text-sm resize-none textarea" readonly>{code}</textarea>
+            <textarea class="rounded-md p-2 pr-16 text-sm resize-none textarea" rows=2 readonly>{code}</textarea>
         </div>
     </div>
          
