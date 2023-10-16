@@ -196,7 +196,7 @@
     <div class="inputField relative flex items-center justify-center">
         <input bind:value={str} placeholder="Enter the text" type="text" class="input rounded-md py-2 sm:py-3 relative mb-3 pr-10"/>
         {#if str}
-            <button class="Btn absolute p-3 bottom-2 sm:bottom-3 right-0" on:click={textClearIn}>
+            <button class="btn btn-sm varient-soft-primary absolute p-3 bottom-2 sm:bottom-3 right-0" on:click={textClearIn}>
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
                 </svg>
@@ -211,10 +211,10 @@
     </div>
     
     <div class="relative w-96 rounded-lg mt-4">
-        <pre class="textarea overflow-x-auto whitespace-pre p-2">
+        <pre class="textarea overflow-x-auto whitespace-pre p-2 pr-16">
 <code>{code}</code>
         </pre>
-        <button on:click={copyClick} use:clipboard={code} class="absolute top-2 right-2 p-2 btn-sm btn variant-soft-surface">
+        <button on:click={copyClick} use:clipboard={code} class="absolute top-2 right-2 p-2 btn-sm btn variant-soft-primary">
             {!copyState ? btnLabel : btnCopied }
         </button>
     </div>
