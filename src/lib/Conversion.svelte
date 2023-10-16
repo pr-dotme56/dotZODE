@@ -210,13 +210,13 @@
         </button>
     </div>
     
-    <div class="mt-4 rounded-md relative">
-        <div class="relative">
-            <button class="absolute top-2 right-2 btn btn-sm variant-soft-surface" on:click={copyClick} use:clipboard={code}>
-                {!copyState ? btnLabel : btnCopied }
-            </button>
-            <textarea class="rounded-md p-2 pr-16 text-sm resize-none textarea" rows=2 readonly>{code}</textarea>
-        </div>
+    <div class="relative w-96 border rounded-lg p-4">
+        <pre class="whitespace-pre code overflow-x-auto"> 
+            <code>{code}</code>
+        </pre>
+        <button on:click={copyClick} use:clipboard={code} class="absolute top-2 right-2 p-2 bg-blue-500 text-white rounded">
+            {!copyState ? btnLabel : btnCopied }
+        </button>
     </div>
          
 </div>
