@@ -208,16 +208,14 @@
         </button>
     </div>
     
-    <div class="mt-4 bg-neutral-900/90 text-md text-white rounded-md">
-        <header class="flex justify-end p-2 pl-4">
-            <button class="btn btn-sm variant-soft !text-white" on:click={copyClick} use:clipboard={code}>
+    <div class="mt-4 bg-gray-100 text-md text-gray-900 rounded-md">
+        <header class="flex justify-end p-2 pl-4 bg-gray-100">
+            <button class="btn btn-sm variant-soft !text-gray-900" on:click={copyClick} use:clipboard={code}>
                 {!copyState ? btnLabel : btnCopied}
             </button>
         </header>
         <div class="h-30 overflow-x-auto">
-            <pre class="rounded-md p-4 bg-gray-100">
-                <code class="text-gray-900 text-sm">{code}</code>
-            </pre>
+            <textarea class="rounded-md p-4 bg-gray-100 text-gray-900 text-sm" readonly>{code}</textarea>
         </div>
     </div>
          
