@@ -208,12 +208,12 @@
         </button>
     </div>
     
-    <div class="mt-4 bg-gray-100 text-md rounded-md relative">
+    <div class="mt-4 rounded-md relative">
         <div class="relative">
             <button class="absolute top-2 right-2 btn btn-sm variant-soft-surface" on:click={copyClick} use:clipboard={code}>
-                {!copyState ? "Copy" : "Copied"}
+                {!copyState ? btnLabel : btnCopied }
             </button>
-            <textarea class="rounded-md p-4 text-sm textarea" readonly>{code}</textarea>
+            <textarea class="rounded-md p-4 text-sm resize-none textarea" readonly>{code}</textarea>
         </div>
     </div>
          
