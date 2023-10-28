@@ -151,7 +151,7 @@
     <div class="mb-10 mt-10">
         <div class="flex justify-center">
             <!-- First Button -->
-            <button class="btn mr-1 variant-filled-secondary w-36 sm:w-48 justify-between" use:popup={popupCombobox}>
+            <button class="btn mr-1 variant-filled-secondary w-36 sm:w-48 justify-between " use:popup={popupCombobox}>
                 <span class="capitalize">{listValue ?? "Select"}</span>
                 <span>
                     <svg class="w-[12px] h-[12px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/></svg>
@@ -207,11 +207,9 @@
         </button>
     </div>
     
-    <div class="relative w-96 rounded-lg mt-4">
-        <pre class="textarea overflow-x-auto p-2">
-<code>{code}</code>
-        </pre>
-        <button on:click={copyClick} use:clipboard={code} class="absolute top-2 right-2 p-2 btn-xm btn variant-soft-primary">
+    <div class="relative mt-4">
+        <input placeholder="Result" type="text" class="input rounded-md py-2 sm:py-3 mb-3 pr-10" value={code} readonly/>
+        <button on:click={copyClick} use:clipboard={code} class="absolute top-1 right-2 p-2 btn-xm btn variant-soft-surface">
             {#if copyState}
                 <span>👍</span>
             {:else}
