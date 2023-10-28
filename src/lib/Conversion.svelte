@@ -2,7 +2,6 @@
     import { clipboard } from "@skeletonlabs/skeleton";
     import { ListBox, ListBoxItem, popup } from '@skeletonlabs/skeleton';
     import type {PopupSettings} from '@skeletonlabs/skeleton';
-	import { createEventDispatcher } from "svelte";
 
     let copyState = false;
     let btnLabel = "Copy";
